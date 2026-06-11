@@ -170,8 +170,8 @@ body::after {
   z-index: 9999;
 
   background: radial-gradient(
-    circle 180px at var(--flash-x) var(--flash-y),
-    rgba(255, 235, 90, 0.65),
+    circle 260px at var(--flash-x) var(--flash-y),
+    rgba(255, 235, 90, 0.40),
     rgba(255, 210, 40, 0.28) 35%,
     rgba(255, 210, 40, 0.08) 55%,
     transparent 75%
