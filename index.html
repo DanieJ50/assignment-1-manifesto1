@@ -44,5 +44,12 @@
 
     </section>
   </main>
+  
+  <script>
+  document.addEventListener("mousemove", function(event) {
+    document.documentElement.style.setProperty("--flash-x", event.clientX + "px");
+    document.documentElement.style.setProperty("--flash-y", event.clientY + "px");
+  });
+</script>
 </body>
 </html>
