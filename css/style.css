@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Georgia, "Times New Roman", serif;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.2), transparent 30%),
+    linear-gradient(135deg, #111827 0%, #2d1b4e 35%, #c7782f 70%, #f7c76b 100%);
+  color: white;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.poem-card {
+  width: min(900px, 100%);
+  padding: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  margin: 0 0 35px;
+  font-size: clamp(2rem, 6vw, 5rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.poem {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.line {
+  display: block;
+  margin: 8px 0;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.45);
+}
+
+/* THE CONCRETE POEM SHAPE:
+   The poem begins small and tucked in,
+   then stretches across the screen like confidence growing. */
+
+.line-1 {
+  font-size: 1.1rem;
+  margin-left: 0;
+}
+
+.line-2 {
+  font-size: 1.25rem;
+  margin-left: 25px;
+}
+
+.line-3 {
+  font-size: 1.4rem;
+  margin-left: 55px;
+}
+
+.line-4 {
+  font-size: 1.55rem;
+  margin-left: 90px;
+}
+
+.line-5 {
+  font-size: 1.75rem;
+  margin-left: 130px;
+}
+
+.line-6 {
+  font-size: 2rem;
+  margin-left: 175px;
+}
+
+.line-7 {
+  font-size: 2.15rem;
+  margin-left: 220px;
+}
+
+.line-8 {
+  font-size: 2.3rem;
+  margin-left: 265px;
+}
+
+.line-9 {
+  font-size: 2.45rem;
+  margin-left: 310px;
+}
+
+.line-10 {
+  font-size: 2.6rem;
+  margin-left: 350px;
+}
+
+.line-11 {
+  font-size: 2.3rem;
+  margin-left: 300px;
+}
+
+.line-12 {
+  font-size: 2rem;
+  margin-left: 250px;
+}
+
+.line-13 {
+  font-size: 2.3rem;
+  margin-left: 300px;
+}
+
+.line-14 {
+  font-size: 2.7rem;
+  margin-left: 370px;
+}
+
+.line-15 {
+  font-size: 3.3rem;
+  margin-left: 430px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a {
+  color: #fff7a8;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 3px solid #fff7a8;
+}
+
+a:hover {
+  color: #ffffff;
+  border-bottom-color: #ffffff;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 760px) {
+  .poem-card {
+    padding: 25px;
+  }
+
+  .line {
+    margin-left: 0 !important;
+    font-size: clamp(1.2rem, 6vw, 2.2rem) !important;
+  }
+
+  .line-15 {
+    font-size: clamp(2rem, 9vw, 3rem) !important;
+  }
+}
